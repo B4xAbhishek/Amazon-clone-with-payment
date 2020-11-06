@@ -13,17 +13,17 @@ function Home() {
    Class =  Class + 'active'
  }
 
- let count = 2;
+let count = 2;
 const  handleClick = () => {
-// console.log('clicked',count) 
+console.log('clicked',count) 
 if (count%2==0){
 setActive(true);
-count=count+1;
-}  else{
+count= count + 1;
+}else{ 
   setActive(false);
 }
-return count;
-  }
+}
+
 
 
   return (
@@ -66,7 +66,7 @@ return count;
     <a class='nav-link active'>Starter</a>
   </li>
   <li class="nav-item" >
-    <a onClick ={handleClick} className = {Class}  >Dessert</a>
+    <a onClick ={handleClick} className = {Class} >Dessert</a>
   </li>
   <li class="nav-item">
     <a className = {Class} onClick ={handleClick} >Main </a>

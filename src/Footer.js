@@ -44,7 +44,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <small>Made By Abhishek Verma </small>
+      <small> </small>
     </div>
   );
 }
