@@ -55,12 +55,13 @@ count= count + 1;
               
 </div>
 
-<div className="navline heading">
+<div className="navline_heading">
   
-<ul class="nav justify-content-end">
-<li >
+<ul>
+<li class="nav-item">
 <h1 className ="heading__h1">Checkout Our <em className = "menu">Menu.</em></h1>
   </li>
+ 
   <div className="list">
   <li class="nav-item">
     <a class='nav-link active'>Starter</a>
@@ -76,8 +77,7 @@ count= count + 1;
   </li>
   </div>
 </ul>
-
-          </div>
+</div>
         <div className="home__row">
           <Product
             id="12321341"
@@ -119,28 +119,6 @@ count= count + 1;
             rating={4}
           />
 
-<Product
-            id="3254354345"
-            title=" Diamond Jewllary"
-            image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0SnSUmoIeZVL9jBtJfbPM58yjP9gqQpJeBg&usqp=CAU"
-            price={19.99}
-            rating={4}
-          />
-
-<Product
-            id="3254354345"
-            title=" Diamond Jewllary"
-            image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0SnSUmoIeZVL9jBtJfbPM58yjP9gqQpJeBg&usqp=CAU"
-            price={19.99}
-            rating={4}
-          />
-          <Product
-            id="3254354345"
-            title=" Diamond Jewllary"
-            image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ0SnSUmoIeZVL9jBtJfbPM58yjP9gqQpJeBg&usqp=CAU"
-            price={19.99}
-            rating={4}
-          />
           
         </div>
         <div className="home__row">

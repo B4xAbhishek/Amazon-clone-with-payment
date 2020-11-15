@@ -1,6 +1,7 @@
 
   .container{
     background-color:#232F3E;
+
     /* height:100%; */
     /* width:100vh; */
     /* height:100vh; */
@@ -8,6 +9,7 @@
   
   .footer__container{
     /* margin:20px 100px 100px 100px;  */
+    padding:2rem;
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
