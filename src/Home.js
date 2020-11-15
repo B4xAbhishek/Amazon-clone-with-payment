@@ -41,7 +41,7 @@ const handleTogglefour = () => {
   return (
     <div className="home">
       <div className="home__container">
-        <div className="image">
+        <div className="image" id ="slide_left">
           <div className="tagline">
         <span> <h1 className ="tagline__one">Delicious &amp; Affordable <em className ="tagline__two"> Meals Near You.</em></h1> </span> 
         <p className="tagline__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -67,7 +67,7 @@ const handleTogglefour = () => {
               
 </div>
 
-<div className="navline_heading">
+<div className="navline_heading" id = "slide_right">
   
 <ul>
 <li class="nav-item">
