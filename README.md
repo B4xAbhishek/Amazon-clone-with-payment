@@ -2,6 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Pull the repo and do npm i && npm start
 
+https://5fb03714c40d47d2745727d0--vibrant-agnesi-f432c0.netlify.app/ 
 
 ## Available Scripts
 
