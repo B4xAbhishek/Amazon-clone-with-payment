@@ -2,28 +2,40 @@
 import React, {useState} from "react";
 import Product from "./Product";
 import "./Home.css";
-import { LensTwoTone } from "@material-ui/icons";
 function Home() {
 
-  const [active, setActive] = useState(false);
 
+// trail 3
 
- let Class = 'nav-link ';
- if(active){
-   Class =  Class + 'active'
- }
-
-let count = 2;
-const  handleClick = () => {
-console.log('clicked',count) 
-if (count%2==0){
-setActive(true);
-count= count + 1;
-}else{ 
-  setActive(false);
-}
-}
-
+const [isActive, setActive] = useState(false);
+const handleToggle = () => {
+  setActive(!isActive);
+  setActivetwo(false);
+  setActivefour(false);
+  setActivethree(false);
+  
+};
+const [isActivetwo, setActivetwo] = useState(false);
+const handleToggletwo = () => {
+  setActivetwo(!isActivetwo);
+  setActive(true);
+  setActivefour(false);
+  setActivethree(false);
+};
+const [isActivethree, setActivethree] = useState(false);
+const handleTogglethree = () => {
+  setActivethree(!isActivethree);
+  setActive(true);
+  setActivefour(false);
+  setActivetwo(false);
+};
+const [isActivefour, setActivefour] = useState(false);
+const handleTogglefour = () => {
+  setActivefour(!isActivefour);
+  setActive(true);
+  setActivethree(false);
+  setActivetwo(false);
+};
 
 
   return (
@@ -63,18 +75,37 @@ count= count + 1;
   </li>
  
   <div className="list">
+  {/* working on Menu  */}
+
+
+
   <li class="nav-item">
-    <a class='nav-link active'>Starter</a>
+  <a onClick ={handleToggle} className = {`nav-link ${isActive ? "" : "active"}`} >Starter</a>
   </li>
+
   <li class="nav-item" >
-    <a onClick ={handleClick} className = {Class} >Dessert</a>
+    <a onClick ={handleToggletwo} className = {`nav-link ${isActivetwo ? "active" : ""}`} >Dessert</a>
   </li>
+
   <li class="nav-item">
-    <a className = {Class} onClick ={handleClick} >Main </a>
+  <a onClick ={handleTogglethree} className = {`nav-link ${isActivethree ? "active" : ""}`} >Main</a>
+
   </li>
+
   <li class="nav-item">
-    <a className = {Class} onClick ={handleClick} >Sell?</a>
+  <a onClick ={handleTogglefour} className = {`nav-link ${isActivefour ? "active" : ""}`} >Sell?</a>
+
   </li>
+
+  {/* End here */}
+
+
+
+
+
+
+
+
   </div>
 </ul>
 </div>
